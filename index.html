@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Primary Meta Tags -->
+	<title>Password Generator Online</title>
+	<meta name="title" content="Password Generator Online">
+	<meta name="description" content="Strong Password Generator to create secure passwords that are impossible to crack on your device without sending them across the Internet, and learn over 30 tricks to keep your passwords, accounts and documents safe.">
+	<meta name="keywords" content="Password Generator, Online Password Generator, Random Password Generator, Secure Password Generator, Create Password, Generate Password" >
+	
+	<meta name="robots" content="index,follow"/>
+	<meta name="author" content="Andrick Santos">
+	<link rel="canonical" href=" https://andricksantos.github.io/password-generator" />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://andriksantos.github.io/password-generator/">
+	<meta property="og:title" content="Password Generator Online">
+	<meta property="og:description" content="Strong Password Generator to create secure passwords that are impossible to crack on your device without sending them across the Internet, and learn over 30 tricks to keep your passwords, accounts and documents safe.">
+	<meta property="og:image" content="img/pg.png">
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://andriksantos.github.io/password-generator/">
+	<meta property="twitter:title" content="Password Generator Online">
+	<meta property="twitter:description" content="Strong Password Generator to create secure passwords that are impossible to crack on your device without sending them across the Internet, and learn over 30 tricks to keep your passwords, accounts and documents safe.">
+	<meta property="twitter:image" content="img/pg.png">
+	
+	<!-- Links styles -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	
+	<!-- Favicon -->
+	<link rel="icon" href="img/pg.png" sizes="32x32" />
+	<link rel="icon" href="img/pg.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="img/pg.png">
+	<meta name="msapplication-TileImage" content="img/pg.png">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169388687-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-169388687-1');
+	</script>
+
+</head>
+<body>
+
+	<div class="contenedor">
+		<div class="logo">
+		<!--
+			<img src="img/logo.svg"  alt="">
+		-->	
+			<p style="letter-spacing: .1rem; font-family: montserrat;">Password Generator</p>
+		</div>
+		<form action="" class="app" id="app">
+			<div class="fila numero-caracteres">
+				<div class="col">
+					<label for="numero-caracteres">Number of characters:</label>
+				</div>
+				<div class="col botones">
+					<div>
+						<button class="btn" id="btn-menos-uno"><i class="fas fa-minus"></i></button>
+					</div>
+					<div>
+						<input type="text" id="numero-caracteres" readonly value="12">
+					</div>
+					<div>
+						<button class="btn" id="btn-mas-uno"><i class="fas fa-plus"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="fila simbolos">
+				<div class="col">
+					<label for="simbolos">Include symbols</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-simbolos"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila numeros">
+				<div class="col">
+					<label for="numeros">¿Include Numbers?</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-numeros"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila mayusculas">
+				<div class="col">
+					<label for="mayusculas">¿Include capital letters?</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-mayusculas"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila generar">
+				<div class="col">
+					<button class="btn btn-generar" id="btn-generar">Generate <i class="fas fa-lock"></i></button>
+				</div>
+				<div class="col">
+					<input type="text" class="input-password" id="input-password" readonly value="T3sT">
+				</div>
+			</div>
+			<div class="fila alerta">
+				<div class="col">
+					<div class="alerta-copiado" id="alerta-copiado">
+						<p><i class="fas fa-copy"></i> Copied text!</p>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<p class="casa">&copy;<script>document.write(new Date().getFullYear());</script> Rights reserved. Github Repository <a href="https://github.com/andriksantos/password-generator" target="_blank" title="Go to repository">Password-Generator</a> Developed by <a class="linkAS" href="https://andriksantos.github.io/" target="_blank" title="Visit the page">Andrik Santos <sup>®</sup></a></small></p>
+
+	<!-- seccion de los script -->
+	<script src="js/app.js"></script>
+</body>
+</html>
