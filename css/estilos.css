@@ -1,9 +1,9 @@
 /*
-	------------------------- 
-		Password Generator 
-	Create by: Andrik Santos 
+------------------------- 
+Password Generator 
+Create by: Andrik Santos 
 https://andriksantos.github.io/ 
-	------------------------- 
+------------------------- 
 */
 
 /*
@@ -29,11 +29,6 @@ https://andriksantos.github.io/
 	color:#fff;
 }
 
-.logotext{
-	font-size: 40px;
-}
-/*
-*/
 body {
 	background: #1e1e1c;
 	color: #fff;
@@ -43,9 +38,6 @@ body {
 body:before {
 	position: absolute;
 	content:'';
-	/*
-	width: 100%;
-	*/
 	top: 0;
 	bottom: 0;
 	left: 0;
